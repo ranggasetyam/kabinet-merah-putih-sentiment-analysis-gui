@@ -1,0 +1,10 @@
+streamlit
+nodejs-bin
+pandas
+numpy
+openpyxl
+torch
+transformers
+matplotlib
+pillow
+streamlit_js_eval
