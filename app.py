@@ -136,15 +136,14 @@ with tab1:
         """)
     
     with st.form("scraping_form"):
-        twitter_auth_token = st.text_input("X Auth Token", type="password", help="Masukkan auth_token dari *cookie browser* Anda.")
-        filename = st.text_input("Nama File *Output* (selalu .csv)", value="data_komentar.csv")
-        search_keyword = st.text_input("Kata Kunci Pencarian", value="Kabinet Merah Putih")
-        limit = st.number_input("Batas Jumlah Komentar", min_value=10, max_value=2000, value=100, step=10)
+        twitter_auth_token = st.text_input("X Auth Token", type="password", help="Masukkan auth_token dari *cookie browser* Anda.", disabled=is_cloud)
+        filename = st.text_input("Nama File *Output* (selalu .csv)", value="data_komentar.csv", disabled=is_cloud)
+        search_keyword = st.text_input("Kata Kunci Pencarian", value="Kabinet Merah Putih", disabled=is_cloud)
+        limit = st.number_input("Batas Jumlah Komentar", min_value=10, max_value=2000, value=100, step=10, disabled=is_cloud)
 
         if is_cloud:
             st.warning(
-                "ℹFitur *scraping* dinonaktifkan saat aplikasi berjalan di Streamlit Cloud."
-                "Silakan jalankan aplikasi secara lokal untuk menggunakan fitur ini."
+                "Fitur *scraping* dinonaktifkan saat aplikasi berjalan di Streamlit Cloud. Silakan jalankan aplikasi secara lokal untuk menggunakan fitur ini."
             )
 
         submitted = st.form_submit_button("🔍 Mulai Scraping", disabled=is_cloud)
