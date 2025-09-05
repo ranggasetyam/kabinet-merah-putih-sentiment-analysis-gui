@@ -141,11 +141,6 @@ with tab1:
         search_keyword = st.text_input("Kata Kunci Pencarian", value="Kabinet Merah Putih", disabled=is_cloud)
         limit = st.number_input("Batas Jumlah Komentar", min_value=10, max_value=2000, value=100, step=10, disabled=is_cloud)
 
-        if is_cloud:
-            st.warning(
-                "Fitur *scraping* dinonaktifkan saat aplikasi berjalan di Streamlit Cloud. Silakan jalankan aplikasi secara lokal untuk menggunakan fitur ini."
-            )
-
         submitted = st.form_submit_button("🔍 Mulai Scraping", disabled=is_cloud)
 
     if submitted:
