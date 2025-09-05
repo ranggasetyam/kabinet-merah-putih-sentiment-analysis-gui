@@ -74,7 +74,7 @@ if model:
 # TAMPILAN UTAMA GUI
 # =====================================================================================
 st.logo(im, size="large")
-st.title("🏛️ Prediksi Analisis Sentimen Kabinet Merah Putih pada Media Sosial X")
+st.title("🏛️ Prediksi Sentimen Kabinet Merah Putih pada Media Sosial X")
 st.markdown("**Dikembangkan oleh Rangga Setya Mahendra**")
 
 with st.expander("ℹ️ Tentang Aplikasi dan Model"):
