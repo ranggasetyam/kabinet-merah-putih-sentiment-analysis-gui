@@ -94,7 +94,7 @@ st.markdown("**Dikembangkan oleh Rangga Setya Mahendra**")
 # Menampilkan expander untuk informasi aplikasi dan model
 with st.expander("ℹ️ Tentang Aplikasi dan Model"):
     st.markdown("""
-    Aplikasi ini dirancang untuk melakukan analisis sentimen terhadap komentar publik mengenai **Kabinet Merah Putih** di media sosial X ke dalam tiga kategori, yaitu **positif, netral, dan negatif**. Aplikasi ini berfungsi sebagai alat yang mudah digunakan bagi siapa saja yang ingin memahami persepsi publik terhadap kabinet baru, baik melalui data yang mereka kumpulkan sendiri maupun dengan melakukan *scraping* data secara langsung dari aplikasi ini.
+    Aplikasi ini dirancang untuk melakukan analisis sentimen terhadap komentar publik mengenai **Kabinet Merah Putih** pada media sosial X ke dalam tiga kategori, yaitu **positif, netral, dan negatif**. Aplikasi ini berfungsi sebagai alat yang mudah digunakan bagi siapa saja yang ingin memahami persepsi publik terhadap kabinet baru, baik melalui data yang mereka kumpulkan sendiri maupun dengan melakukan *scraping* data secara langsung dari aplikasi ini.
     """)
     st.markdown("""
     Model yang digunakan untuk melakukan prediksi sentimen adalah **IndoBERTweet**, sebuah varian dari model BERT yang secara khusus dilakukan _pre-training_ pada jutaan data _tweet_ berbahasa Indonesia. Model ini telah melalui proses _fine-tuning_ pada _dataset_ komentar spesifik tentang Kabinet Merah Putih sehingga memiliki pemahaman konteks yang lebih baik.
